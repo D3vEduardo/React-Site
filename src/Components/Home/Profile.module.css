@@ -12,6 +12,8 @@
 }
 
 .img {
+  width: 80%;
+  max-width: 400px;
     opacity: 1;
     border-radius: 10px;
     border: solid lightseagreen 4px;

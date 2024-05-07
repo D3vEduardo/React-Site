@@ -32,7 +32,7 @@ export default function Profile() {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to("#img", {
             opacity: 0,
-            width: "90%",
+            width: "85%",
             scrollTrigger: {
                 trigger: "#img",
                 start: "top 125px",
