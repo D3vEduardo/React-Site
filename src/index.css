@@ -22,3 +22,13 @@ body {
     border: 0;
     flex: 1;
 }
+
+::selection {
+    background: lightseagreen;
+    color: white;
+}
+
+::-moz-selection {
+    background: lightseagreen;
+    color: white;
+}

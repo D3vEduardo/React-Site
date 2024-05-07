@@ -22,9 +22,10 @@
     padding: 0;
 }
 
-.projetos:hover {
+.projeto:hover {
     cursor: pointer;
     box-shadow: lightseagreen 0 0 15px;
+    transition: 0.5 ease-in-out;
 }
 
 .projeto {
