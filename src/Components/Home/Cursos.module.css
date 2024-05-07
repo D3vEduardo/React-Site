@@ -19,7 +19,7 @@
 .logo {
     font-size: 80px;
     color: lightseagreen;
-    transition: 0.5 ease-in-out;
+    transition: filter 0.5 ease-in-out;
 }
 
 .logo:hover {
