@@ -1,0 +1,47 @@
+.body {
+    text-align: center;
+    display: flexbox;
+    width: 100%;
+    height: auto;
+    padding-bottom: 65px;
+    padding-block-start: 65px;
+    background-image: url("https://cdn.discordapp.com/attachments/1196236630089023529/1236734897801003010/1714930863863.png?ex=663916a1&is=6637c521&hm=37614ea435ba5975fccae166dd8f709662d5325842e4ebefab0205da4d2765c4&");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.title {
+    color: lightseagreen;
+}
+
+.projetos {
+    padding: -5px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.projeto {
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #222222;
+    border-radius: 20px;
+}
+
+.icone {
+    margin: auto auto;
+    font-size: 70px;
+    color: lightseagreen;
+}
+
+.text {
+    margin: auto;
+    color: white;
+}

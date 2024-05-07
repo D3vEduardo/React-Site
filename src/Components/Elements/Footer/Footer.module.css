@@ -1,0 +1,22 @@
+.p {
+    color: white;
+    font-size: 30px;
+}
+
+.footer {
+    box-shadow: lightseagreen 0 0 0 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    background-color: #191919;
+    margin: auto;
+    text-align: center;
+    color: cadetblue;
+}
+
+.icone {
+    font-size: 50px;
+    margin: auto auto;
+}
