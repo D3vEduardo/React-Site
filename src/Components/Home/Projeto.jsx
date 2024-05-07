@@ -1,38 +1,39 @@
 import styles from "./Projeto.module.css";
 import { FaLink } from "react-icons/fa6";
 
+const ProjetoItem = ({ url, title }) => (
+  <figure className={styles.projeto}>
+    <FaLink className={styles.icone} />
+    <h3 className={styles.text}>{title}</h3>
+  </figure>
+);
+
 export default function Projeto() {
-    return (
-        <div className={styles.body}>
-            <h1 className={styles.title}>Projetos/Exercícios</h1>
-            <div
-                className={styles.projetos}
-                onClick={() => {
-                    window.open("https://oduhgym.netlify.app");
-                }}
-            >
-                <div className={styles.projeto}>
-                    <FaLink className={styles.icone} />
-                    <h3 className={styles.text}>
-                        Web-Site
-                        <br />
-                        pessoal
-                    </h3>
-                </div>
-                <div
-                    className={styles.projeto}
-                    onClick={() => {
-                        window.open("https://bakibrowser.netlify.app");
-                    }}
-                >
-                    <FaLink className={styles.icone} />
-                    <h3 className={styles.text}>
-                        "Browser"
-                        <br />
-                        pessoal
-                    </h3>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <section className={styles.body}>
+      <h1 className={styles.title}>Projetos/Exercícios</h1>
+      <div className={styles.projetos}>
+        <ProjetoItem
+          url="https://oduhgym.netlify.app"
+          title={
+            <>
+              Web-Site
+              <br />
+              pessoal
+            </>
+          }
+        />
+        <ProjetoItem
+          url="https://bakibrowser.netlify.app"
+          title={
+            <>
+              "Browser"
+              <br />
+              pessoal
+            </>
+          }
+        />
+      </div>
+    </section>
+  );
 }
