@@ -20,3 +20,8 @@
     font-size: 80px;
     color: lightseagreen;
 }
+
+.logo:hover {
+    cursor: pointer;
+    filter: drop-shadow(lightseagreen 0 0 15px);
+}

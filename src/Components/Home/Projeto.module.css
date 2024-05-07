@@ -1,42 +1,47 @@
 .body {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  padding-bottom: 65px;
-  padding-block-start: 65px;
-  background-image: url("../../assets/projetos.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 65px;
+    padding-block-start: 65px;
+    background-image: url("../../assets/projetos.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .title {
-  color: lightseagreen;
+    color: lightseagreen;
 }
 
 .projetos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.projetos:hover {
+    cursor: pointer;
+    box-shadow: lightseagreen 0 0 15px;
 }
 
 .projeto {
-  margin: 15px;
-  padding: 15px;
-  background-color: #222222;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #222222;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icone {
-  font-size: 70px;
-  color: lightseagreen;
+    font-size: 70px;
+    color: lightseagreen;
 }
 
 .text {
-  color: white;
+    color: white;
 }
