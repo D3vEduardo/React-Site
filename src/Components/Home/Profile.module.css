@@ -26,12 +26,8 @@
 }
 
 @media (max-width: 769px) {
-    .img {
-        width: 70%;
-    }
+    
 }
 @media (min-width: 769px) {
-    .img {
-        width: 250px;
-    }
+
 }

@@ -33,6 +33,7 @@ export default function Profile() {
         gsap.to("#img", {
             opacity: 0,
             width: "85%",
+            maxWidth: "500px",
             scrollTrigger: {
                 trigger: "#img",
                 start: "top 125px",
