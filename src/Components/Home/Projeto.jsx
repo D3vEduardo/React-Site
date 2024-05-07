@@ -2,7 +2,7 @@ import styles from "./Projeto.module.css";
 import { FaLink } from "react-icons/fa6";
 
 const ProjetoItem = ({ url, title }) => (
-  <figure className={styles.projeto}>
+  <figure className={styles.projeto} onClick={() => window.open(url)}>
     <FaLink className={styles.icone} />
     <h3 className={styles.text}>{title}</h3>
   </figure>
