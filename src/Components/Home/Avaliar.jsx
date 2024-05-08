@@ -10,16 +10,13 @@ import AtualizarDados from "../../Cruds/AtualizarDados";
 
 export default function Avaliar() {
     const ClickRate = (url, nome, valorAtual, setState) => {
- 
-            
-            let valorNovo = valorAtual + 1;
-            setState(valorNovo);
-            String(valorNovo);
-            AtualizarDados(url, {
-                qtd: valorNovo
-            });
-        
-        
+        alert("aoba");
+        let valorNovo = valorAtual + 1;
+        setState(valorNovo);
+        String(valorNovo);
+        AtualizarDados(url, {
+            qtd: valorNovo
+        });
     };
 
     const [Bad, setBad] = useState([]);
