@@ -1,5 +1,6 @@
 import styles from "./Avaliar.module.css";
-import { IoMdHappy, IoIosHappy } from "react-icons/io";
+import { IoIosHappy } from "react-icons/io";
+import { IoHappyOutline } from "react-icons/io5";
 import { FaRegFrownOpen, FaFrownOpen } from "react-icons/fa";
 import { BsEmojiNeutral, BsEmojiNeutralFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
@@ -29,7 +30,7 @@ const Carinha = () => (
             <p>Médio</p>
         </figure>
         <figure className={styles.fig_carinha}>
-            <IoMdHappy
+            <IoHappyOutline
                 onClick={() => {
                     ClickRate(3);
                 }}
@@ -42,7 +43,7 @@ const Carinha = () => (
 export default function Avaliar() {
     return (
         <section className={styles.body}>
-            <h1>Avalie o site:</h1>
+            <h1 className={styles.title}>Avalie o site:</h1>
             <Carinha />
         </section>
     );

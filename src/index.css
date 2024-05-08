@@ -33,17 +33,3 @@ body {
     color: white;
 }
 
-nav a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: lightseagreen;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.4s ease-in-out;
-}
-
-nav a:hover::after {
-    width: 100%;
-}

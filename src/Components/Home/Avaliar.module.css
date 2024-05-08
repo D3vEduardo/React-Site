@@ -11,12 +11,29 @@
     padding-block-start: 65px;
 }
 
+.title {
+    color: lightseagreen;
+}
+
 .sec_carinhas {
     display: flex;
     justify-content: center;
 }
 
 .fig_carinha {
+    color: white;
     padding-left: 6px;
     text-align: center;
+    font-size: 20px;
+    transition: all 0.25s ease;
+}
+
+.fig_carinha svg {
+    font-size: 50px;
+    padding-bottom: 8px;
+}
+
+.fig_carinha:hover {
+    cursor: pointer;
+    color: lightseagreen;
 }
