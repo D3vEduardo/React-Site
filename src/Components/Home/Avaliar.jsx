@@ -8,24 +8,18 @@ import app from "../../Firebase";
 import PegarDado from "../../Cruds/PegarDados";
 import AtualizarDados from "../../Cruds/AtualizarDados";
 
-// Verifica se o botão já foi pressionado
-
-// Se o botão já foi pressionado, exibe um alerta
-
 export default function Avaliar() {
     const ClickRate = (url, nome, valorAtual, setState) => {
-        if (localStorage.getItem("avaliou")) {
-            return alert("Você já avaliou anteriormente!");
-        } else {
-            vericarRate();
+ 
+            
             let valorNovo = valorAtual + 1;
             setState(valorNovo);
             String(valorNovo);
             AtualizarDados(url, {
                 qtd: valorNovo
             });
-        }
-        localStorage.setItem("avaliou", "true");
+        
+        
     };
 
     const [Bad, setBad] = useState([]);
