@@ -10,16 +10,18 @@ import AtualizarDados from "../../Cruds/AtualizarDados";
 
 export default function Avaliar() {
     const ClickRate = (url, nome, valorAtual, setState) => {
- 
-            
+        if (!localStorage.getItem("avaliou")) {
+            alert("aoba");
             let valorNovo = valorAtual + 1;
             setState(valorNovo);
             String(valorNovo);
             AtualizarDados(url, {
                 qtd: valorNovo
             });
-        
-        
+            localStorage.setItem("avaliou", "true");
+        } else {
+            alert("❌ • Você já avaliou o site anteriormente!");
+        }
     };
 
     const [Bad, setBad] = useState([]);
