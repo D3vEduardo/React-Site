@@ -2,30 +2,14 @@ import styles from "./Profile.module.css";
 import { useState, useEffect, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { getDatabase, ref, get } from "firebase/database";
-import app from "../../Firebase";
 import logo from "../../assets/logo.png";
+import PegarDado from "../../Cruds/PegarDados";
 
 export default function Profile() {
     const [nome, setNome] = useState([]);
 
-    const getNome = async () => {
-        try {
-            const db = getDatabase(app);
-            const CaminhoDoDado = ref(db, "/Main/Nome/Nome");
-            const snapshot = await get(CaminhoDoDado);
-            if (snapshot.exists()) {
-                setNome(Object.values(snapshot.val()));
-            } else {
-                console.error("Error fetching data 1");
-            }
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
-    };
-
     useEffect(() => {
-        getNome();
+        PegarDado("/Main/Nome/Nome", setNome);
     }, []);
 
     useLayoutEffect(() => {

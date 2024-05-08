@@ -11,7 +11,7 @@ export default function Home() {
             <Profile className="Profile" />
             <Cursos />
             <Projeto />
-            <Avaliar />
+            <Avaliar/>
         </div>
     );
 }

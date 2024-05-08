@@ -4,47 +4,85 @@ import { IoHappyOutline } from "react-icons/io5";
 import { FaRegFrownOpen, FaFrownOpen } from "react-icons/fa";
 import { BsEmojiNeutral, BsEmojiNeutralFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
-import { getDatabase, ref, get } from "firebase/database";
 import app from "../../Firebase";
+import PegarDado from "../../Cruds/PegarDados";
+import AtualizarDados from "../../Cruds/AtualizarDados";
 
-const ClickRate = id => {
-    alert(`Clicou no ${id}`);
-};
+// Verifica se o botão já foi pressionado
 
-const Carinha = () => (
-    <section className={styles.sec_carinhas}>
-        <figure className={styles.fig_carinha}>
-            <FaRegFrownOpen
-                onClick={() => {
-                    ClickRate(1);
-                }}
-            />
-            <p>Ruim</p>
-        </figure>
-        <figure className={styles.fig_carinha}>
-            <BsEmojiNeutral
-                onClick={() => {
-                    ClickRate(2);
-                }}
-            />
-            <p>Médio</p>
-        </figure>
-        <figure className={styles.fig_carinha}>
-            <IoHappyOutline
-                onClick={() => {
-                    ClickRate(3);
-                }}
-            />
-            <p>Bom</p>
-        </figure>
-    </section>
-);
+// Se o botão já foi pressionado, exibe um alerta
 
 export default function Avaliar() {
+    const ClickRate = (url, nome, valorAtual, setState) => {
+        if (localStorage.getItem("avaliou")) {
+            return alert("Você já avaliou anteriormente!");
+        } else {
+            vericarRate();
+            let valorNovo = valorAtual + 1;
+            setState(valorNovo);
+            String(valorNovo);
+            AtualizarDados(url, {
+                qtd: valorNovo
+            });
+        }
+        localStorage.setItem("avaliou", "true");
+    };
+
+    const [Bad, setBad] = useState([]);
+    const [Medium, setMedium] = useState([]);
+    const [Good, setGood] = useState([]);
+    const [QtdAll, setQtdAll] = useState([]);
+
+    useEffect(() => {
+        PegarDado("/Main/Stars/Bad", setBad);
+        PegarDado("/Main/Stars/Medium", setMedium);
+        PegarDado("/Main/Stars/Good", setGood);
+    }, []);
+
     return (
         <section className={styles.body}>
             <h1 className={styles.title}>Avalie o site:</h1>
-            <Carinha />
+            <section className={styles.sec_carinhas}>
+                <figure className={styles.fig_carinha}>
+                    <FaRegFrownOpen
+                        onClick={() => {
+                            ClickRate(
+                                "/Main/Stars/Bad",
+                                "Bad",
+                                Number(Bad),
+                                setBad
+                            );
+                        }}
+                    />
+                    <p>{String(Bad)} votos</p>
+                </figure>
+                <figure className={styles.fig_carinha}>
+                    <BsEmojiNeutral
+                        onClick={() => {
+                            ClickRate(
+                                "/Main/Stars/Medium",
+                                "Medium",
+                                Number(Medium),
+                                setMedium
+                            );
+                        }}
+                    />
+                    <p>{String(Medium)} votos</p>
+                </figure>
+                <figure className={styles.fig_carinha}>
+                    <IoHappyOutline
+                        onClick={() => {
+                            ClickRate(
+                                "/Main/Stars/Good",
+                                "Good",
+                                Number(Good),
+                                setGood
+                            );
+                        }}
+                    />
+                    <p>{String(Good)} votos</p>
+                </figure>
+            </section>
         </section>
     );
 }
