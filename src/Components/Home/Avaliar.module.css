@@ -1,0 +1,22 @@
+.body {
+    color: white;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(../../assets/avalie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 65px;
+    padding-block-start: 65px;
+}
+
+.sec_carinhas {
+    display: flex;
+    justify-content: center;
+}
+
+.fig_carinha {
+    padding-left: 6px;
+    text-align: center;
+}

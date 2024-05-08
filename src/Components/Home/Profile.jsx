@@ -36,12 +36,11 @@ export default function Profile() {
             maxWidth: "500px",
             scrollTrigger: {
                 trigger: "#img",
-                start: "top 125px",
-                end: "bottom 140px",
-                startTrigger: "#img",
-                endTrigger: "#img",
-                markers: true,
-                scrub: true
+                start: "top 120px",
+                end: "bottom 180px",
+                markers: false, // <-- Mude para true
+                scrub: true,
+                toggleActions: "restart pause reverse pause"
             }
         });
     }, []);
