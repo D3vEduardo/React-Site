@@ -51,3 +51,18 @@ li::after {
 li:hover::after {
     width: 100%;
 }
+
+li::before {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+li:hover::before {
+    width: 100%;
+}

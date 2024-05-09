@@ -10,8 +10,8 @@ import AtualizarDados from "../../Cruds/AtualizarDados";
 
 export default function Avaliar() {
     const ClickRate = (url, nome, valorAtual, setState) => {
- 
-  if (document.cookie.replace(/(?:(?:^|.*;\s*)avaliou\s*\=\s*([^;]*).*$)|^.*$/, "$1") === "true") {
+
+  if (document.cookie.includes("avaliou=true")) {
     alert("❌ • Você já avaliou o site anteriormente!");
   } else {
     let valorNovo = valorAtual + 1;
@@ -23,11 +23,11 @@ export default function Avaliar() {
     document.cookie = "avaliou=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
   }
 }
-      
-            
 
 
-       
+
+
+
 
     const [Bad, setBad] = useState([]);
     const [Medium, setMedium] = useState([]);
