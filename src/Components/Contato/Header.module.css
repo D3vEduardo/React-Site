@@ -1,0 +1,23 @@
+.body {
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    border-radius: 20px;
+    padding-bottom: 65px;
+    padding-block-start: 65px;
+    background-image: url("../../assets/contato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 28px;
+    color: lightseagreen;
+}
+
+.icone {
+    font-size: 100px;
+    color: lightseagreen;
+    filter: drop-shadow(lightseagreen 0 0 15px);
+}

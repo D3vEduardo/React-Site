@@ -1,0 +1,57 @@
+@keyframes AlertKeyFrames {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        color: transparent;
+    }
+    25% {
+        color: transparent;
+        opacity: 1;
+        width: 80%;
+        height: auto;
+    }
+    30% {
+        opacity: 1;
+        width: 80%;
+        height: auto;
+        color: white;
+    }
+    70% {
+        opacity: 1;
+        width: 80%;
+        height: auto;
+        color: white;
+    }
+    75% {
+        color: transparent;
+        opacity: 1;
+        width: 80%;
+        height: auto;
+    }
+    100% {
+        color: transparent;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.alert {
+    margin: auto;
+    padding: 8px;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    animation: AlertKeyFrames 3s ease;
+}
+
+.sucesso {
+    border: solid #2bc919;
+    background-color: #183D14;
+}
+
+.erro {
+    border: solid #CD1919;
+    background-color: #411414;
+}
