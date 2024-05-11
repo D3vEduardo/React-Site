@@ -1,0 +1,107 @@
+.body {
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    border-radius: 20px;
+    padding-bottom: 45px;
+    padding-block-start: 45px;
+    background-image: url("../../assets/whatsapp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 28px;
+    color: lightseagreen;
+}
+
+.icone {
+    font-size: 100px;
+    color: lightseagreen;
+    filter: drop-shadow(lightseagreen 0 0 15px);
+}
+
+.button {
+    padding: 6px;
+    margin-top: 8px;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(
+        100% 100% at 100% 0,
+        lightblue 0,
+        lightseagreen 100%
+    );
+    border: 0;
+    border-radius: 6px;
+    box-shadow:
+        darkslategrey 0 2px 4px,
+        darkslategrey 0 7px 13px -3px,
+        darkslategrey 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    width: 100pxpx;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition:
+        box-shadow 0.15s,
+        transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button:focus {
+    box-shadow:
+        lightseagreen 0 0 0 1.5px inset,
+        darkslategrey 0 2px 4px,
+        darkslategrey 0 7px 13px -3px,
+        lightseagreen 0 -3px 0 inset;
+}
+
+.button:hover {
+    box-shadow:
+        darkslategrey 0 4px 8px,
+        darkslategrey 0 7px 13px -3px,
+        lightseagreen 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: lightseagreen 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.input {
+    color: white;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    width: 320px;
+}
+
+.input:active {
+    box-shadow: 2px 2px 15px lightseagreen inset;
+}
+
+.link {
+    margin-top: 8px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
