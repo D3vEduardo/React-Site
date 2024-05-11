@@ -8,25 +8,25 @@
     25% {
         color: transparent;
         opacity: 1;
-        width: 80%;
+        width: 100vw;
         height: auto;
     }
     30% {
         opacity: 1;
-        width: 80%;
+        width: 100vw;
         height: auto;
         color: white;
     }
     70% {
         opacity: 1;
-        width: 80%;
+        width: 100vw;
         height: auto;
         color: white;
     }
     75% {
         color: transparent;
         opacity: 1;
-        width: 80%;
+        width: 100vw;
         height: auto;
     }
     100% {
@@ -41,17 +41,17 @@
     margin: auto;
     padding: 8px;
     height: auto;
-    width: 80%;
+    width: 100vw;
     text-align: center;
     animation: AlertKeyFrames 3s ease;
 }
 
 .sucesso {
     border: solid #2bc919;
-    background-color: #183D14;
+    background-color: #183d14;
 }
 
 .erro {
-    border: solid #CD1919;
+    border: solid #cd1919;
     background-color: #411414;
 }
