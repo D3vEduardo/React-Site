@@ -4,12 +4,13 @@ import logo from "../../assets/logo.png";
 import PegarDado from "../../Cruds/PegarDados";
 import Loader from "../Elements/Loader/Loader";
 
-export default function Profile({ setLoad }) {
+export default function Profile() {
     const [nome, setNome] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoad(true);
-        PegarDado("/Main/Nome/Nome", setNome).then(() => setLoad(false));
+        setLoading(true);
+        PegarDado("/Main/Nome/Nome", setNome).then(() => setLoading(false));
     }, []);
 
     const text =
@@ -17,9 +18,17 @@ export default function Profile({ setLoad }) {
 
     return (
         <header className={styles.profile}>
+            {loading === false ? (
+                <>
                     <img src={logo} id="img" className={styles.img} />
                     <h1 className={styles.name}>{nome}</h1>
                     <h4>{text}</h4>
+                </>
+            ) : (
+                <>
+                    <Loader />
+                </>
+            )}
         </header>
     );
 }
