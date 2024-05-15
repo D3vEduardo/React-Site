@@ -15,13 +15,13 @@
   max-width: 400px;
     opacity: 1;
     border-radius: 10px;
-    border: solid lightseagreen 4px;
-    box-shadow: lightseagreen 0 0 22px;
+    border: solid gray 4px;
+    box-shadow: gray 0 0 22px;
 }
 
 .name {
-    color: lightseagreen;
-    text-shadow: lightseagreen 0 0 12px;
+    color: gray;
+    text-shadow: gray 0 0 12px;
 }
 
 @media (max-width: 769px) {

@@ -1,10 +1,10 @@
 .p {
-    color: white;
-    font-size: 30px;
+    font-size: 22px;
+    color: ghostwhite;
 }
 
 .footer {
-    box-shadow: lightseagreen 0 0 0 5px;
+    box-shadow: gray 0 0 0 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: 8px;
@@ -13,7 +13,7 @@
     background-color: #191919;
     margin: auto;
     text-align: center;
-    color: cadetblue;
+    color: gray;
 }
 
 .icone {

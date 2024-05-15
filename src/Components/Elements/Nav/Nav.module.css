@@ -6,7 +6,7 @@
     padding: 8px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    box-shadow: lightseagreen 0 5px 0;
+    box-shadow: gray 0 5px 0;
     z-index: 10;
 }
 
@@ -22,7 +22,7 @@
     margin: auto;
     padding: 8px;
     text-decoration: none;
-    color: lightseagreen;
+    color: gray;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ li::after {
     content: " ";
     width: 0;
     height: 4px;
-    background-color: lightseagreen;
+    background-color: dimgray;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,7 +53,7 @@ li::before {
     content: " ";
     width: 0;
     height: 4px;
-    background-color: lightseagreen;
+    background-color: dimgray;
     position: absolute;
     top: 0;
     right: 0;
@@ -61,6 +61,7 @@ li::before {
     border-radius: 4px;
 }
 
-li:hover::before, li:hover::after {
+li:hover::before,
+li:hover::after {
     width: 100%;
 }

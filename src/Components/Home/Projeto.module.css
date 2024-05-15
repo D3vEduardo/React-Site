@@ -11,7 +11,7 @@
 }
 
 .title {
-    color: lightseagreen;
+    color: gray;
 }
 
 .projetos {
@@ -23,7 +23,7 @@
 
 .projeto:hover {
     cursor: pointer;
-    box-shadow: lightseagreen 0 0 20px;
+    box-shadow: gray 0 0 20px;
 }
 
 .projeto {
@@ -39,7 +39,7 @@
 
 .icone {
     font-size: 70px;
-    color: lightseagreen;
+    color: gray;
 }
 
 .text {

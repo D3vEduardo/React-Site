@@ -12,11 +12,11 @@
 
 .title {
     font-size: 28px;
-    color: lightseagreen;
+    color: gray;
 }
 
 .icone {
     font-size: 100px;
-    color: lightseagreen;
-    filter: drop-shadow(lightseagreen 0 0 15px);
+    color: gray;
+    filter: drop-shadow(gray 0 0 15px);
 }

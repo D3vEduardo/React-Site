@@ -5,6 +5,7 @@ import styles from "./Footer.module.css";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
+            <p className={styles.p}>Me siga:</p>
             <CiInstagram
                 className={styles.icone}
                 onClick={() => window.open("https://instagram.com/oduh.gym")}
@@ -13,7 +14,6 @@ export default function Footer() {
                 className={styles.icone}
                 onClick={() => window.open("https://github.com/EduCod3")}
             />
-            <p className={styles.p}>by Edu Code</p>
         </footer>
     );
 }

@@ -12,16 +12,16 @@
 }
 
 .title {
-    color: lightseagreen;
+    color: gray;
 }
 
 .logo {
     font-size: 80px;
-    color: lightseagreen;
+    color: gray;
     transition: filter 0.25s ease;
 }
 
 .logo:hover {
     cursor: pointer;
-    filter: drop-shadow(lightseagreen 0 0 20px);
+    filter: drop-shadow(gray 0 0 20px);
 }
