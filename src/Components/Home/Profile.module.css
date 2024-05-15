@@ -2,6 +2,11 @@
     color: white;
     margin-top: 10px;
     text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-items: center;
+    justify-items: center;
     padding-bottom: 65px;
     padding-block-start: 65px;
     width: 100%;
@@ -11,8 +16,8 @@
 }
 
 .img {
-  width: 70%;
-  max-width: 400px;
+    width: 70%;
+    max-width: 400px;
     opacity: 1;
     border-radius: 10px;
     border: solid gray 4px;
@@ -25,8 +30,6 @@
 }
 
 @media (max-width: 769px) {
-    
 }
 @media (min-width: 769px) {
-
 }

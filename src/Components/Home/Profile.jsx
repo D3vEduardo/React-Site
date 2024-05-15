@@ -2,12 +2,14 @@ import styles from "./Profile.module.css";
 import { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
 import PegarDado from "../../Cruds/PegarDados";
+import Loader from "../Elements/Loader/Loader";
 
-export default function Profile() {
+export default function Profile({ setLoad }) {
     const [nome, setNome] = useState([]);
 
     useEffect(() => {
-        PegarDado("/Main/Nome/Nome", setNome);
+        setLoad(true);
+        PegarDado("/Main/Nome/Nome", setNome).then(() => setLoad(false));
     }, []);
 
     const text =
@@ -15,9 +17,9 @@ export default function Profile() {
 
     return (
         <header className={styles.profile}>
-            <img src={logo} id="img" className={styles.img} />
-            <h1 className={styles.name}>{nome}</h1>
-            <h4>{text}</h4>
+                    <img src={logo} id="img" className={styles.img} />
+                    <h1 className={styles.name}>{nome}</h1>
+                    <h4>{text}</h4>
         </header>
     );
 }
