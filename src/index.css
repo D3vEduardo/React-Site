@@ -27,10 +27,10 @@ body {
 
 ::selection {
     background: transparent;
-    filter: invert("87%");
+    color: gray;
 }
 
 ::-moz-selection {
     background: transparent;
-    filter: invert("87%");
+    color: gray;
 }
