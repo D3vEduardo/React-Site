@@ -26,11 +26,11 @@ body {
 }
 
 ::selection {
-    background: lightseagreen;
-    color: white;
+    background: transparent;
+    filter: invert(87%);
 }
 
 ::-moz-selection {
-    background: lightseagreen;
-    color: white;
+    background: transparent;
+    filter: invert(87%);
 }
