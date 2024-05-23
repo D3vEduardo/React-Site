@@ -8,7 +8,7 @@ export default function Footer() {
             <p className={styles.p}>Me siga:</p>
             <CiInstagram
                 className={styles.icone}
-                onClick={() => window.open("https://instagram.com/oduh.gym")}
+                onClick={() => window.open("https://instagram.com/deveduardo")}
             />
             <FaGithub
                 className={styles.icone}
