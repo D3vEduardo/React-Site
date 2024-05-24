@@ -27,7 +27,7 @@ export default function Instagra() {
                         setTimeout(() => {
                             setAlertContent();
                             setAlertType();
-                            window.open("https://ig.me/m/oduh.gym");
+                            window.open("https://ig.me/m/deveduardo");
                         }, 3000);
                     }}
                     className={styles.button}
