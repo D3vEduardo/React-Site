@@ -12,7 +12,7 @@ export default function Footer() {
             />
             <FaGithub
                 className={styles.icone}
-                onClick={() => window.open("https://github.com/EduCod3")}
+                onClick={() => window.open("https://github.com/D3vEduardo")}
             />
         </footer>
     );
